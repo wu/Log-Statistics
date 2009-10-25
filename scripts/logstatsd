@@ -1,13 +1,7 @@
 #!/usr/bin/perl -w
 use strict;
 
-#
-#_* WARNING: This is alpha quality code.
-#
-# See POD docs below.
-#
-
-use version; our $VERSION = qv('0.51.3');
+our $VERSION;
 
 #
 #_* Libraries
@@ -60,15 +54,15 @@ BEGIN {
           '--sleep:i'          => \$opt{'sleep'},
           '--logtail:s'        => \$opt{'logtail'},
           '-u|update:i'        => \$opt{'update'},
-          '-debug:i'	       => \$opt_debug,
+          '-debug:i'           => \$opt_debug,
           '-debugnull'         => \$opt{'debugnull'},
           '-filter_regexp:s'   => \$opt{'filter_regexp'},
           '-ssh:s'             => \$opt{'ssh'},
           '-ssh-command:s'     => \$opt{'ssh_command'},
           '-ssh-prefilter:s'   => \$opt{'ssh_pre_filter'},
-          '-v|verbose!'	       => \$opt_verbose,
+          '-v|verbose!'        => \$opt_verbose,
           '-version'           => \$opt{'version'},
-          '-help|?'		       => \$opt_help,
+          '-help|?'            => \$opt_help,
       )
   ) { pod2usage( -exitval => 1, -verbose => 0 ) }
 

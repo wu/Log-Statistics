@@ -2,7 +2,7 @@ package Log::Statistics;
 use warnings;
 use strict;
 
-use version; our $VERSION = qv("0.50.3");
+our $VERSION;
 
 #
 #_* Libraries
