@@ -54,7 +54,7 @@ select((select($local_fh), $|=1)[0]);
 # case it is renamed.
 my $command = "$ssh $server $tail -n +0 -F $remote_path";
 print "Opening remote log file: $command\n";
-open my $tail_fh, "$command 2>&1 |" or die "Unable to execute $command: $!";
+open my $tail_fh, "-|", "$command 2>&1" or die "Unable to execute $command: $!";
 
 # output all results of remote tail to local file
 while ( my $line = <$tail_fh> ) {
