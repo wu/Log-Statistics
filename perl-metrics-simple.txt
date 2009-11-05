@@ -1,0 +1,55 @@
+
+Perl files found:                1
+
+Counts
+------
+total code lines:        301
+lines of non-sub code:   15
+packages found:          1
+subs/methods:            17
+
+Subroutine/Method Size
+----------------------
+min:                  4 lines
+max:                  97 lines
+mean:                 16.82 lines
+std. deviation:       21.27
+median:               10.00
+
+McCabe Complexity
+-----------------
+Code not in any subroutine::
+min:                  1
+max                   1
+mean:                 1.00
+std. deviation:       0.00
+median:               1.00
+
+Subroutines/Methods:
+min:                  1
+max:                  34
+mean:                 4.76
+std. deviation:       7.51
+median:               3.00
+
+Tab-delimited list of subroutines, with most complex at top
+-----------------------------------------------------------
+complexity	sub	path	size
+34	parse_line	lib/Log/Statistics.pm	97
+6	add_field	lib/Log/Statistics.pm	19
+6	_xmlify_groups	lib/Log/Statistics.pm	24
+5	add_group	lib/Log/Statistics.pm	24
+5	_xmlify_fields	lib/Log/Statistics.pm	20
+4	register_field	lib/Log/Statistics.pm	11
+4	_xmlify_duration	lib/Log/Statistics.pm	16
+3	save_data	lib/Log/Statistics.pm	10
+3	get_xml	lib/Log/Statistics.pm	21
+2	parse_text	lib/Log/Statistics.pm	7
+2	read_data	lib/Log/Statistics.pm	6
+2	get_utime_from_string	lib/Log/Statistics.pm	9
+1	new	lib/Log/Statistics.pm	6
+1	add_time_regexp	lib/Log/Statistics.pm	4
+1	add_line_regexp	lib/Log/Statistics.pm	4
+1	add_filter_regexp	lib/Log/Statistics.pm	4
+1	set_debug_nullvalues	lib/Log/Statistics.pm	4
+1	{code not in named subroutines}	lib/Log/Statistics.pm	15
